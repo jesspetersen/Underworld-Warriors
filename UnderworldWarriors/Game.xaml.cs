@@ -24,6 +24,14 @@ namespace UnderworldWarriors
             InitializeComponent();
             NameLbl.Content = App.heroName;
             ClassLbl.Content = App.heroChoice;
+            if (App.heroChoice == "engineer")
+                HeroImg.Source = new BitmapImage(new Uri(@"/Images/engineer.gif", UriKind.Relative));
+            if (App.heroChoice == "ninja")
+                HeroImg.Source = new BitmapImage(new Uri(@"/Images/ninja.gif", UriKind.Relative));
+            if (App.heroChoice == "pirate")
+                HeroImg.Source = new BitmapImage(new Uri(@"/Images/pirate.gif", UriKind.Relative));
+            if (App.heroChoice == "ranger")
+                HeroImg.Source = new BitmapImage(new Uri(@"/Images/ranger.gif", UriKind.Relative));
         }
     }
 }

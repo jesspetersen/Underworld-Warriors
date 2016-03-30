@@ -14,6 +14,13 @@
             <TabItem Name="CurrentRoomTab" Header="Current Room" FontWeight="Bold" Background="GreenYellow">
             </TabItem>
             <TabItem Name="PreviousRoomsTab" Header="Previous Rooms" FontWeight="Bold" Background="NavajoWhite">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition Height="25" />
+                    </Grid.RowDefinitions>
+                    <Button Name="AboutBtn" Grid.Row="1" Background="Pink" Content="ABOUT" />
+                </Grid>
             </TabItem>
             <TabItem Background="Navy" Name="HeroTab">
                 <TabItem.Header>
@@ -50,6 +57,7 @@
                                 <RowDefinition />
                                 <RowDefinition />
                                 <RowDefinition />
+                                <RowDefinition />
                             </Grid.RowDefinitions>
                             <Label Name="HealthLbl" Grid.Column="0" Grid.Row="0" Content="Health" HorizontalAlignment="Center" />
                             <Label Name="HealthValueLbl" Grid.Column="1" Grid.Row="0" Content="empty" HorizontalAlignment="Center" />
@@ -57,9 +65,14 @@
                             <Label Name="AttackValueLbl" Grid.Column="1" Grid.Row="1" Content="empty" HorizontalAlignment="Center" />
                             <Label Name="DefenceLbl" Grid.Column="0" Grid.Row="2" Content="Defence" HorizontalAlignment="Center" />
                             <Label Name="DefenceValueLbl" Grid.Column="1" Grid.Row="2" Content="empty" HorizontalAlignment="Center" />
-                            
+                            <Label Name="SneakLbl" Grid.Column="0" Grid.Row="3" Content="Sneak" HorizontalAlignment="Center" />
+                            <Label Name="SneakValueLbl" Grid.Column="1" Grid.Row="3" Content="empty" HorizontalAlignment="Center" />
+
                         </Grid>
                     </StackPanel>
+                    <Border Grid.Column="1" Grid.Row="1" BorderBrush="Yellow" BorderThickness="3" Margin="2">
+                        <Image Name="HeroImg" Grid.Column="1" Grid.Row="1" Source="Images/warrior.gif" Margin="5" />
+                    </Border>
                 </Grid>
             </TabItem>
         </TabControl>
