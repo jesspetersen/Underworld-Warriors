@@ -1,0 +1,19 @@
+﻿<Window x:Class="UnderworldWarriors.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UnderworldWarriors"
+        mc:Ignorable="d"
+        Title="Underworld Warriors - Home" Height="350" Width="525"
+        MinHeight="350" MinWidth="525"
+        FontFamily="Courier New"
+        Background="BlanchedAlmond">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label Name="TitleLbl" Content="UNDERWORLD WARRIORS" FontSize="32" FontWeight="Bold" />
+            <Button Name="NewGameBtn" Content="New Game" Padding="10px" Margin="5px" Click="NewGameBtn_Click" />
+        </StackPanel>
+        
+    </Grid>
+</Window>

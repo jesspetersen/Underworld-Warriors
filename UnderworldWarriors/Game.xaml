@@ -1,0 +1,67 @@
+﻿<Window x:Class="UnderworldWarriors.Game"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UnderworldWarriors"
+        mc:Ignorable="d"
+        Title="Underworld Warriors - Game" Height="350" Width="525"
+        MinHeight="350" MinWidth="525"
+        FontFamily="Courier New"
+        Background="BlanchedAlmond">
+    <Grid Background="Black">
+        <TabControl>
+            <TabItem Name="CurrentRoomTab" Header="Current Room" FontWeight="Bold" Background="GreenYellow">
+            </TabItem>
+            <TabItem Name="PreviousRoomsTab" Header="Previous Rooms" FontWeight="Bold" Background="NavajoWhite">
+            </TabItem>
+            <TabItem Background="Navy" Name="HeroTab">
+                <TabItem.Header>
+                    <TextBlock Text="Hero" FontWeight="Bold" Foreground="Crimson" />
+                </TabItem.Header>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="55" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0" Grid.ColumnSpan="2" BorderBrush="DarkRed" BorderThickness="3" Margin="2" />
+                    <Label Grid.ColumnSpan="2" Content="HERO" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24" FontWeight="Bold" Margin="10px" />
+                    <Border Grid.Column="0" Grid.Row="1" BorderBrush="DarkSlateBlue" BorderThickness="3" Margin="2" />
+                    <StackPanel Grid.Row="1" Grid.Column="0">
+                        <Label Content="STATS" FontWeight="Bold" HorizontalAlignment="Center" FontSize="16" Margin="5" />
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Label Content="Name: " />
+                            <Label Name="NameLbl" Content="NameGoesHere" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Label Content="Class: " />
+                            <Label Name="ClassLbl" Content="ClassGoesHere" />
+                        </StackPanel>
+                        <Grid ShowGridLines="True" Margin="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Label Name="HealthLbl" Grid.Column="0" Grid.Row="0" Content="Health" HorizontalAlignment="Center" />
+                            <Label Name="HealthValueLbl" Grid.Column="1" Grid.Row="0" Content="empty" HorizontalAlignment="Center" />
+                            <Label Name="AttackLbl" Grid.Column="0" Grid.Row="1" Content="Attack" HorizontalAlignment="Center" />
+                            <Label Name="AttackValueLbl" Grid.Column="1" Grid.Row="1" Content="empty" HorizontalAlignment="Center" />
+                            <Label Name="DefenceLbl" Grid.Column="0" Grid.Row="2" Content="Defence" HorizontalAlignment="Center" />
+                            <Label Name="DefenceValueLbl" Grid.Column="1" Grid.Row="2" Content="empty" HorizontalAlignment="Center" />
+                            
+                        </Grid>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
