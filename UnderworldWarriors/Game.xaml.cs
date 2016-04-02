@@ -33,5 +33,11 @@ namespace UnderworldWarriors
             if (App.heroChoice == "ranger")
                 HeroImg.Source = new BitmapImage(new Uri(@"/Images/ranger.gif", UriKind.Relative));
         }
+
+        private void AboutBtn_Click(object sender, RoutedEventArgs e)
+        {
+            var aboutScreen = new AboutWindow();
+            aboutScreen.Show();
+        }
     }
 }

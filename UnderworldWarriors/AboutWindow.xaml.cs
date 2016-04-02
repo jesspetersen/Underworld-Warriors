@@ -10,27 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace UnderworldWarriors
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AboutWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AboutWindow : Window
     {
-        public MainWindow()
+        public AboutWindow()
         {
             InitializeComponent();
-        }
-
-        private void NewGameBtn_Click(object sender, RoutedEventArgs e)
-        {
-            var newGameWindow = new NewGame();
-            App.Current.MainWindow = newGameWindow;
-            Close();
-            newGameWindow.Show();
         }
     }
 }

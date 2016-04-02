@@ -42,7 +42,7 @@
                         <RowDefinition />
                         <RowDefinition Height="25" />
                     </Grid.RowDefinitions>
-                    <Button Name="AboutBtn" Grid.Row="1" Background="Pink" Content="ABOUT" />
+                    <Button Name="AboutBtn" Grid.Row="1" Background="Pink" Content="ABOUT" Click="AboutBtn_Click" />
                 </Grid>
             </TabItem>
             <TabItem Background="Navy" Name="HeroTab">

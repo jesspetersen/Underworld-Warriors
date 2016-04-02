@@ -152,8 +152,9 @@ namespace UnderworldWarriors
             else
             {
                 var gameWindow = new Game();
-                gameWindow.Show();
+                App.Current.MainWindow = gameWindow;
                 Close();
+                gameWindow.Show();
             }
         }
     }
