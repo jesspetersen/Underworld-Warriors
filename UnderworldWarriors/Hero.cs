@@ -9,5 +9,10 @@ namespace UnderworldWarriors
     class Hero
     {
 
+        string name = App.heroName;
+        string heroClass = App.heroChoice;
+
+        int health, attack, defence, sneak;
+
     }
 }
